@@ -82,9 +82,47 @@ let 학교:{
 
 // 타입 변수
 type MyType = string | number;
-
 let nameTest3 : MyType = 123;
 
+type MyType2 = {name : string, age : number};
+let animal :MyType2 = {name  :'kim', age : 20};
+
+// readonly 키워드는 속성 왼쪽에 붙여 사용하며 특정 속성을 변경 불가능하게 지정한다.
+type MyType3 = {
+    readonly name : string
+}
+const girlfriend :MyType3 = { name : '엠버' };
+
+type TestTypeNm = string;
+type TestTypeAge = number;
+type Person = TestTypeNm | TestTypeAge;
+
+// & 기호로 object 안의 두개의 속성을 합칠 수 있습니다.
+type PositionX = {x : number};
+type PositionY = {y : number};
+type NewType1 = PositionX & PositionY;
+
+let PositionTest :NewType1 = {x:10, y:20};
+
+type TestTypeObj1 = {
+    color? : string,
+    size : number,
+    readonly position : number[]
+}
+
+type TestTypeObj2 = {
+    name : string,
+    phone : number,
+    email : string,
+};
+let TestObj :TestTypeObj2 = { name : 'kim', phone : 123, email : 'abc@naver.com' };
+
+type TestTypeObj3 = {
+    name : string,
+    phone : number,
+    email : string,
+    student : boolean
+};
 
 
 

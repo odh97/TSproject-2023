@@ -47,6 +47,10 @@ unTest = 50;
 // 안정성 비교
 let TestData;
 let nameTest3 = 123;
+let animal = { name: 'kim', age: 20 };
+const girlfriend = { name: '엠버' };
+let PositionTest = { x: 10, y: 20 };
+let TestObj = { name: 'kim', phone: 123, email: 'abc@naver.com' };
 // 함수
 function testFn(x) {
     return x * 2;
