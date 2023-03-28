@@ -44,3 +44,9 @@ let removeDash = (x) => {
     return parseFloat(x.replace(/-/g, ''));
 };
 console.log(removeDash("010-0000-3333"));
+let paramFn = (x, cutZero, removeDash) => {
+    let result = cutZero(x);
+    let result2 = cutZero(result);
+    return removeDash(result2);
+};
+console.log(paramFn("010-9786-9700", cutZero, removeDash));

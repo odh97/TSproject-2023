@@ -56,6 +56,7 @@ let 회원정보 :회원정보타입 = {
 
 type CutZeroType = (a :string) => string;
 type RemoveDashType = (a :string) => number;
+type paramFnType = (x: string, cutZero :CutZeroType, removeDash :RemoveDashType) => number;
 
 let cutZero :CutZeroType = (x)=>{
     if(x[0] === "0") return x.slice(1);
@@ -67,4 +68,12 @@ let removeDash :RemoveDashType = (x)=>{
     return parseFloat(x.replace(/-/g, ''));
 };
 console.log(removeDash("010-0000-3333"));
+
+let paramFn :paramFnType = (x, cutZero, removeDash)=>{
+    let result = cutZero(x);
+    let result2 = cutZero(result);
+    return removeDash(result2);
+}
+console.log(paramFn("010-9786-9700", cutZero, removeDash));
+
 

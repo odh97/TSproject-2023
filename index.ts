@@ -138,7 +138,7 @@ function testFn2(x : number) :void{ // 리턴을 사용 하지 않을때 사용
 testFn2(2);
 
 // function testFn3(x : number | undefined) :void{ // ?를 사용할 경우 같은 의미이다.
-function testFn3(x? : number) :void{ // 리턴을 사용 하지 않을때 사용
+function testFn3(x : number) :void{ // 리턴을 사용 하지 않을때 사용
     x + 1
     console.log(x + 3);
 }
@@ -158,7 +158,7 @@ function testFn5(x : number) :number{
 
 console.log( testFn5(456) );
 
-function testFn6(pay :number,home :boolean, charm :string): string{
+function testFn6(pay :number,home :boolean, charm :string){
     let total :number;
     let homeScore :number = 0;
     let charmScore :number = 0;
