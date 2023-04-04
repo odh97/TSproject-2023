@@ -111,3 +111,48 @@ let problemObj2 = new ProblemObj2;
 problemObj2.addOne(3); //이렇게 하면 x가 3 더해져야함
 problemObj2.addOne(4); //이렇게 하면 x가 4 더해져야함
 problemObj2.printX(); //이렇게 하면 콘솔창에 x값이 출력되어야함
+
+class Square{
+  width : number;
+  height : number;
+  color : string;
+  constructor(w :number, h :number, c :string){
+    this.width = w;
+    this.height = h;
+    this.color = c;
+  }
+
+  draw(){
+    let itemBox = document.getElementById("createBox");
+    let createDiv = document.createElement("div");
+
+    let ranLeft = (400 - this.width) * Math.random();
+    let ranTop = (400 - this.height) * Math.random();
+
+    let styleTemplate = `
+      left: ${ranLeft}px;
+      top: ${ranTop}px;
+      width: ${this.width}px;
+      height: ${this.height}px;
+      background-color: ${this.color};
+      position: absolute;
+    `
+
+    createDiv.setAttribute("style", styleTemplate);
+
+    if(itemBox instanceof Element){
+      itemBox.append(createDiv);
+    }
+    
+  }
+}
+
+let 네모 = new Square(30, 30, 'red');
+네모.draw();
+네모.draw();
+네모.draw();
+네모.draw();
+네모.draw();
+네모.draw();
+네모.draw();
+네모.draw();
