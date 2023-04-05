@@ -156,3 +156,21 @@ let 네모 = new Square(30, 30, 'red');
 네모.draw();
 네모.draw();
 네모.draw();
+
+import {exportName, exportNumber, exportCar, exportBike, ExportObjFn} from './a';
+
+let newCar:exportCar = {
+  wheel : 4,
+  model : "K9",
+};
+
+let newBike:exportBike = {
+  wheel : 2,
+  model : "KR모터스",
+};
+console.log("exportName : "+exportName);
+
+let importFn :ExportObjFn = function(a){
+  console.log(a)
+}
+

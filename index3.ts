@@ -87,10 +87,9 @@ console.log(obj.str) //['kim', 'park']
 // interface 문법 과 type
 // 외부 라이브러리같은 경우 interface를 많이 사용며 커스텀 해서 사용할 수 있다.
 
-
 // interface 와 type 차이점
 // interface 는 중복 선언이 가능하다. (중복 선언하면 합쳐진다고 보면된다.)
-// interface 는 중복 선언이 불가능하다. 
+// type 는 중복 선언이 불가능하다.
 
 interface Square {
   color : string,
