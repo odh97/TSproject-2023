@@ -123,7 +123,7 @@ let 네모 = new Square(30, 30, 'red');
 네모.draw();
 네모.draw();
 네모.draw();
-import { exportName } from './a';
+import { exportName } from './export.js';
 let newCar = {
     wheel: 4,
     model: "K9",

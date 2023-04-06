@@ -157,7 +157,7 @@ let 네모 = new Square(30, 30, 'red');
 네모.draw();
 네모.draw();
 
-import {exportName, exportNumber, exportCar, exportBike, ExportObjFn} from './a';
+import {exportName, exportNumber, exportCar, exportBike, ExportObjFn} from './export.js';
 
 let newCar:exportCar = {
   wheel : 4,
