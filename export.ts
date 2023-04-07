@@ -11,3 +11,8 @@ export interface exportBike {
 }
 
 export type ExportObjFn = (a? :object) => void
+
+// namespace 사용
+export namespace 네임스페이스 {
+  export type Name = string | number;
+}

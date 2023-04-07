@@ -4,6 +4,6 @@
     // "module": "CommonJS",
     "module": "ESNext",
     "strictNullChecks": true,
-    
-  } 
+    "declaration": true,
+  },
 }

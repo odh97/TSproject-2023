@@ -1,4 +1,3 @@
-
 // public private protected static
 // public (기본값으로 설정되어있다.)
 // 수정을 가능하게 해준다.
