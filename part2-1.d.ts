@@ -18,12 +18,14 @@ declare function userDataFn({ user, comment, admin }: {
     admin: any;
 }): void;
 declare function arrFn([a, b, c]: (string | number | boolean)[]): void;
+declare function NarroFn(a: string | undefined): void;
 type Fish = {
     swim: string;
 };
 type Bird = {
     fly: string;
 };
+declare function NarroFn2(animal: Fish | Bird): void;
 declare let date: Date;
 type CarNarro = {
     wheel: '4개';

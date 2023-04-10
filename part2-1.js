@@ -30,10 +30,10 @@ function arrFn([a, b, c]) {
 }
 arrFn([40, 'wine', false]);
 // Narrowing 방법들
-function 함수(a) {
+function NarroFn(a) {
     if (a && typeof a === "string") { } // && 연산자
 }
-function 함수2(animal) {
+function NarroFn2(animal) {
     if ('swim' in animal) { //  in 연산자
         animal.swim;
     }

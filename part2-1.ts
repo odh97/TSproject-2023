@@ -49,13 +49,13 @@ function arrFn([a,b,c] :(string | number | boolean)[]){
 arrFn([40, 'wine', false]);
 
 // Narrowing 방법들
-function 함수(a: string | undefined){
+function NarroFn(a: string | undefined){
   if( a && typeof a === "string" ){} // && 연산자
 }
 
 type Fish = {swim :string};
 type Bird = {fly :string}
-function 함수2(animal : Fish | Bird){
+function NarroFn2(animal : Fish | Bird){
   if('swim' in animal){ //  in 연산자
     animal.swim;
   }
