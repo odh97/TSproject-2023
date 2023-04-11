@@ -31,3 +31,17 @@ let sigObj2 = {
         }
     }
 };
+// object type 변환기
+let objTrans = { name: 'kim', age: 20 };
+Object.keys(objTrans);
+console.log(Object.keys(objTrans));
+let atest = 'name';
+console.log(atest);
+let Age1;
+let Age2;
+let arrAny1;
+let arrAny2;
+let age1;
+let age2;
+let ReturnType1; //이러면 number가 이 자리에 남음
+let ReturnType2; //이러면 string이 이 자리에 남음
